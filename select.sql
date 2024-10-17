@@ -15,3 +15,5 @@
 -- );
 
 SELECT * from students ORDER BY first_name ASC
+
+SELECT email as "Student Email" FROM students
