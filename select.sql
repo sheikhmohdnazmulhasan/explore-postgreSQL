@@ -22,4 +22,10 @@ SELECT email as "Student Email" FROM students
 
 SELECT DISTINCT age from students
 
-SELECT * FROM students WHERE blood_group = "A+"
+SELECT * FROM students WHERE blood_group = 'A+'
+
+SELECT *
+FROM students
+WHERE
+    blood_group = 'b-'
+    AND major = 'Computer Science'
