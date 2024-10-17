@@ -14,4 +14,4 @@
 --     gpa DECIMAL(3, 2)
 -- );
 
-SELECT * from students ORDER BY ASC first_name
+SELECT * from students ORDER BY first_name ASC
