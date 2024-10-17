@@ -14,6 +14,12 @@
 --     gpa DECIMAL(3, 2)
 -- );
 
+SELECT * FROM students
+
 SELECT * from students ORDER BY first_name ASC
 
 SELECT email as "Student Email" FROM students
+
+SELECT DISTINCT age from students
+
+SELECT * FROM students WHERE blood_group = "A+"
