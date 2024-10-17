@@ -29,3 +29,7 @@ FROM students
 WHERE
     blood_group = 'b-'
     AND major = 'Computer Science'
+
+SELECT * FROM students WHERE age != 20
+
+SELECT * FROM students WHERE age <= 20
