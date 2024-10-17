@@ -10,3 +10,5 @@ ALTER Table first_table RENAME age to person_age
 ALTER Table first_table alter COLUMN email type VARCHAR(200)
 
 ALTER Table first_table alter COLUMN person_age set Not NULL
+
+ALTER Table first_table alter COLUMN person_age drop Not NULL
