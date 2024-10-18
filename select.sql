@@ -33,3 +33,5 @@ WHERE
 SELECT * FROM students WHERE age != 20
 
 SELECT * FROM students WHERE age <= 20
+
+SELECT upper(first_name), * FROM students
