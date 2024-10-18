@@ -16,4 +16,4 @@ ALTER Table first_table alter COLUMN person_age drop Not NULL
 ALTER Table first_table
 ADD constraint UNIQUE_ADDRESS UNIQUE (address)
 
-ALTER Table first_table DROP constraint UNIQUE_ADDRES
+ALTER Table first_table DROP constraint UNIQUE_ADDRESS
