@@ -41,3 +41,5 @@ SELECT concat(first_name, ' ', last_name) FROM students
 SELECT * FROM students
 
 SELECT max(length(first_name)) FROM students
+
+SELECT * FROM students WHERE blood_group IN ('A+', 'B+')
