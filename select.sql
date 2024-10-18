@@ -42,4 +42,6 @@ SELECT * FROM students
 
 SELECT max(length(first_name)) FROM students
 
-SELECT * FROM students WHERE blood_group IN ('A+', 'B+')
+SELECT * FROM students WHERE blood_group IN ('A+', 'B+');
+
+SELECT * FROM students WHERE age BETWEEN 21 AND 22
