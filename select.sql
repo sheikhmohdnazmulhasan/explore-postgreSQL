@@ -45,3 +45,11 @@ SELECT max(length(first_name)) FROM students
 SELECT * FROM students WHERE blood_group IN ('A+', 'B+');
 
 SELECT * FROM students WHERE age BETWEEN 21 AND 22
+
+SELECT * FROM students WHERE first_name LIKE '%hn'
+
+SELECT * FROM students WHERE first_name LIKE 'E%'
+
+SELECT * FROM students WHERE first_name LIKE '__i%'
+
+SELECT * FROM students LIMIT 2 OFFSET 2 * 2
