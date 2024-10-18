@@ -35,3 +35,5 @@ SELECT * FROM students WHERE age != 20
 SELECT * FROM students WHERE age <= 20
 
 SELECT upper(first_name), * FROM students
+
+SELECT concat(first_name, ' ', last_name) FROM students
