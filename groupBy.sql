@@ -1,3 +1,3 @@
 SELECT * FROM students
 
-SELECT age FROM students GROUP BY age
+SELECT age, avg(age) FROM students GROUP BY age
