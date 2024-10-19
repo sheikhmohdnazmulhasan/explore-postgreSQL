@@ -24,4 +24,8 @@ SELECT to_char(now(), 'yyyy/mm/dd')
 
 SELECT CURRENT_DATE - INTERVAL '1 year'
 
-SELECT * age (CURRENT_DATE, dob) FROM students
+SELECT *, age (CURRENT_DATE, dob) FROM students
+
+SELECT extract( year FROM '2024-01-25'::date )
+
+SELECT 'n':BOOLEAN
