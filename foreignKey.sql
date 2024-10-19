@@ -9,11 +9,23 @@ CREATE Table users (
 ALTER Table users
 alter COLUMN username
 set not NULL
--- create posts table
+-- create posts table with reference to user's username
 CREATE Table posts (
     id SERIAL PRIMARY KEY,
     post TEXT not NULL,
     user_id INTEGER REFERENCES users (id)
-)
+);
+
+-- INSERT some data to users
+INSERT INTO
+    users (username)
+VALUES (
+        ('nazmul'),
+        ('sheikh'),
+        ('hasan'),
+        ('rakiba'),
+        ('rimi'),
+        ('mina'),
+    )
 
 SELECT * from posts
