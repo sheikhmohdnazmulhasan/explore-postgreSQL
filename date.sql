@@ -28,4 +28,4 @@ SELECT *, age (CURRENT_DATE, dob) FROM students
 
 SELECT extract( year FROM '2024-01-25'::date )
 
-SELECT 'n':BOOLEAN
+SELECT '0'::BOOLEAN
