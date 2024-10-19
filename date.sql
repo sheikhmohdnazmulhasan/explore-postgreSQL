@@ -16,4 +16,12 @@ SELECT * FROM timeZ
 
 SELECT now()
 
-SELECT
+SELECT CURRENT_DATE
+
+SELECT NOW()::date
+
+SELECT to_char(now(), 'yyyy/mm/dd')
+
+SELECT CURRENT_DATE - INTERVAL '1 year'
+
+SELECT * age (CURRENT_DATE, dob) FROM students
