@@ -19,13 +19,18 @@ CREATE Table posts (
 -- INSERT some data to users
 INSERT INTO
     users (username)
+VALUES ('nazmul'),
+    ('sheikh'),
+    ('hasan'),
+    ('rakiba'),
+    ('rimi'),
+    ('mina')
+    -- insert some demo data
+INSERT INTO
+    posts (post, user_id)
 VALUES (
-        ('nazmul'),
-        ('sheikh'),
-        ('hasan'),
-        ('rakiba'),
-        ('rimi'),
-        ('mina'),
+        'ewewewewe ewewe ewewew ewe',
+        1
     )
 
 SELECT * from posts
