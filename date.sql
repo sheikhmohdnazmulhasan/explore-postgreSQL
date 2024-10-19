@@ -5,4 +5,15 @@ CREATE Table timeZ (
     tsz TIMESTAMP with time zone
 )
 
-INSERT INTO ti
+INSERT INTO
+    timeZ
+VALUES (
+        '2024-01-22 10:20:00',
+        '2024-01-22 10:20:00'
+    )
+
+SELECT * FROM timeZ
+
+SELECT now()
+
+SELECT
