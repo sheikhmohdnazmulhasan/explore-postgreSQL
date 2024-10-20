@@ -55,3 +55,7 @@ SELECT * from users JOIN posts on posts.user_id = users.id
 SELECT * from posts as p LEFT JOIN users as u on p.user_id = u.id
 
 SELECT * FROM posts RIGHT JOIN users on posts.user_id = users.id
+
+SELECT *
+FROM posts
+    FULL OUTER JOIN users on posts.user_id = users.id
