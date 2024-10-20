@@ -43,3 +43,13 @@ DELETE FROM users WHERE id = 2
 SELECT post, username
 FROM posts
     JOIN users on posts.user_id = users.id
+
+SELECT users.id
+from posts
+    JOIN users on posts.user_id = users.id
+
+SELECT * from posts JOIN users on posts.user_id = users.id
+
+SELECT * from users JOIN posts on posts.user_id = users.id
+
+SELECT * from posts as p LEFT JOIN users as u on p.user_id = u.id
