@@ -13,7 +13,7 @@ set not NULL
 CREATE Table posts (
     id SERIAL PRIMARY KEY,
     post TEXT not NULL,
-    user_id INTEGER REFERENCES users (id)
+    user_id INTEGER REFERENCES users (id) ON DELETE CASCADE
 );
 
 -- INSERT some data to users
@@ -25,12 +25,17 @@ VALUES ('nazmul'),
     ('rakiba'),
     ('rimi'),
     ('mina')
-    -- insert some demo data
+    -- insert some demo data for posts
+
 INSERT INTO
     posts (post, user_id)
-VALUES (
-        'ewewewewe ewewe ewewew ewe',
-        1
-    )
+VALUES ('21212wqwqwvfvfv', 3),
+    ('0202020slslslj', 4)
+
+ALTER Table posts alter COLUMN user_id set not NULL
 
 SELECT * from posts
+
+DROP Table posts
+
+DELETE FROM users WHERE id = 2
