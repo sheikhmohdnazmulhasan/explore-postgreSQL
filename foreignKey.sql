@@ -39,3 +39,7 @@ SELECT * from posts
 DROP Table posts
 
 DELETE FROM users WHERE id = 2
+
+SELECT post, username
+FROM posts
+    JOIN users on posts.user_id = users.id
