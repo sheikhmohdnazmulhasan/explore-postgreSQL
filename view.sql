@@ -9,4 +9,6 @@ CREATE View stdnts_avg_age as
 SELECT blood_group, round(avg(age))
 FROM students
 GROUP BY
-    blood_group
+    blood_group;
+
+SELECT * FROM stdnts_avg_age
