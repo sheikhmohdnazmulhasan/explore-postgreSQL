@@ -20,13 +20,15 @@ $$
 
 CALL remove_student_by_id (10)
 
-CREATE Procedure remove_student_by_id_var (p_student_id) 
+CREATE OR REPLACE Procedure remove_student_by_id_var (p_student_id INT) 
 LANGUAGE plpgsql AS
 $$
 DECLARE targeted_student_var INT;
 
 BEGIN
-SELECT student_id  FROM students WHERE student_id = p_student_id;
-
+SELECT student_id INTO targeted_student_var FROM students WHERE student_id = p_student_id +1;
+DELETE FROM students WHERE student_id = targeted_student_var;
 END
 $$
+
+CALL remove_student_by_id_var (4)
